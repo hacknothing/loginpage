@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script src="loginpage.js"></script>
+    <link rel="stylesheet" href="loginpage.css">
+    
+</head>
+<body>
+    <div class="container">
+       
+            <form  onsubmit="return checkUserData()" action="https://colorhunt.co/" id="login-main">
+                <h2 style="text-align: center;">Login</h2>
+                <div>
+                    <input type="text" id="login-username" class="input" placeholder="username"><br>
+                    <input type="password" name="" id="login-password" class="input" placeholder="password"><br>
+                </div>
+                <h5 style="text-align: center;"><a href="">forgot password</a></h5>
+                <div class="buttons">
+                    <button>login</button>
+                </div>
+            </form>
+
+            <div class="content-login" id="content-login">
+                <h1 style="text-align: center;">Login</h1>
+    
+               <div class="login ">
+                <p>Have an account ?</p>
+                <p>Try LOgin to the website</p>
+                <button onclick="revealBlockLogin()">Try Login</button>
+                
+               </div>
+            </div>
+
+            <form action="https://colorhunt.co/" onsubmit="getUserData()" class="signup-main" id="signup-main">
+                <h2 style="text-align: center;">SignUp</h2>
+                <div>
+                    <input type="text" id="sigup-username" class="input" placeholder="username"><br>
+                    <input type="email" name="" id="email" placeholder="Enter email" class="input">
+                    <input type="password" name="" id="signup-password" class="input" placeholder="password"><br>
+                </div>
+
+                <div class="buttons">
+                    <button>SignUp</button>
+                </div>
+            </form>
+        
+        <div class="content" id="content">
+            <h1 style="text-align: center;">SignUp</h1>
+
+           <div class="signup">
+            <p>Don't have an account ?</p>
+            <p>Try Sign Up to the website</p>
+            <button onclick="revealBlock()">Try SignUp</button>
+
+            
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>
